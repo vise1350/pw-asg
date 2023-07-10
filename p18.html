@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Change Text on Button Click</title>
+</head>
+<body>
+<h1 id="heading">The most affordable learning platform</h1>
+<button onclick="changeText()">Change Text</button>
+<script>
+function changeText() {
+  const heading = document.getElementById("heading");
+  const text = heading.textContent;
+
+  if (text === "The most affordable learning platform") {
+    heading.textContent = "PW Skills";
+  } else {
+    heading.textContent = "The most affordable learning platform";
+  }
+}
+</script>
+</body>
+</html>
